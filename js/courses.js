@@ -5,59 +5,7 @@ var servicescards = document.querySelector(".services-cards");
 
 window.onload = function() {
     if (localStorage.getItem("courseId") == null) {
-        var p = prompt("Enter Id From 1 To 7");
-
-        switch (p) {
-            case "1":
-                AllCoursesFind = editApps;
-                projectName = "Course Edit Apps";
-                setitle.innerHTML = projectName;
-                drawCourseInfo();
-                break;
-            case "2":
-                AllCoursesFind = sketchware;
-                projectName = "Course SketchWare";
-                setitle.innerHTML = projectName;
-                drawCourseInfo();
-                break;
-            case "3":
-                AllCoursesFind = fixProblems;
-                projectName = "Fix Problems";
-                setitle.innerHTML = projectName;
-                drawCourseInfo();
-                break;
-            case "4":
-                AllCoursesFind = github;
-                projectName = "Github";
-                setitle.innerHTML = projectName;
-                drawCourseInfo();
-                break;
-            case "5":
-                AllCoursesFind = hostWeb;
-                projectName = "Hosting Website";
-                setitle.innerHTML = projectName;
-                drawCourseInfo();
-                break;
-            case "6":
-                AllCoursesFind = VsCode;
-                projectName = "VsCode";
-                setitle.innerHTML = projectName;
-                drawCourseInfo();
-                break;
-            case "7":
-                AllCoursesFind = whatsapp;
-                projectName = "WhatsApp";
-                setitle.innerHTML = projectName;
-                drawCourseInfo();
-                break;
-            default:
-        
-            break;
-        }
-
-        if (p >= 8 || p == null ) {
-            window.location = "../index.html" ;
-        }
+        window.location = history.back() ;
     }
 }
 
