@@ -191,15 +191,12 @@ let AllQuotes = [
         heading: "Quote 30" ,
         time: "Added On 8/4/2024" ,
     },
-
     {
         id: 31 ,
         imgUrl: "https://i.ibb.co/jr297pR/31.png" ,
         heading: "Quote 31" ,
-        new: "New" ,
         time: "Added On 15/4/2024" ,
     },
-
     {
         id: 32 ,
         imgUrl: "https://i.ibb.co/LPN3h8P/32.png" ,
@@ -207,6 +204,14 @@ let AllQuotes = [
         new: "New" ,
         time: "Added On 20/4/2024" ,
     },
+    {
+        id: 33 ,
+        imgUrl: "https://i.ibb.co/MVxLd7q/33.png" ,
+        heading: "Quote 33" ,
+        new: "New" ,
+        time: "Added On 22/4/2024" ,
+    },
+    
 ];
 
 var servicescards = document.querySelector("#cards");
