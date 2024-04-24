@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're Offline</title>
+    <link rel="shortcut icon" href="../assest/mylogo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .Offline {
+    min-height: 100vh;
+    background-color: #e6e6e6;
+}
+
+.Offline i {
+    font-size: 50px;
+    color: #464141 ;
+}
+
+.Offline-content .title {
+    font-size: 30px;
+    color: red;
+}
+
+.Offline-content ul {
+    list-style-type:disc ;
+    position: relative;
+    left: 32px;
+}
+
+.Offline-content ul li {
+    font-size: 13px;
+}
+
+.Offline-content .reload {
+    background-color: #666;
+    padding: 10px ;
+    margin-top: 10px;
+    width: 70px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Offline-content .hide {
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    <section class="flex Offline">
+
+        <div class="Offline-content">
+            <i class='bx bx-wifi-off'></i>
+            <h2 class="title">You're Offline Now</h2>
+            <ul>
+                <li>Checking The Internet</li>
+                <li>Checking The Proxy And The Firewall</li>
+                <li>Running Windows Network Diagnostics</li>
+            </ul>
+            <button class="reload">Reload</button>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="../js/offline.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find ID</title>
+    <!-- BoxICon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../assest/mylogo.png" type="image/x-icon">
+    <!-- Css File -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body onclick="sound()" style="background-color: rgba(0, 0, 0, 0.8);">
+    <!-- UnDiectURL -->
+    <div class="UnDiectURL" onclick="sound()">
+        <div class="UnDiectURL-content">
+            <i class='bx bxs-id-card'></i>
+            <h3>Enter Id Product</h3>
+            <p>Enter Id From 1 To 19</p>
+            <input type="number" class="unDBtn" required>
+            <button onclick="sound()" type="button" class="unDUrlBtnn">Ok</button>
+        </div>
+    </div>
+
+<script>
+
+    const audio = new Audio("../Sound_Effect/button.wav");
+    function sound() {
+    audio.play();
+    }
+
+    let AllDays2 = [
+    {
+        id: 1 ,
+        imgUrl: "../assest/services/1.png" ,
+        heading: "Day 1 - Search Bar" ,
+        desc: "Search Bar Using Html , Css , Js " ,
+        iframe: "https://www.youtube.com/embed/iNotJe7KR7Q?si=bHYeZLFApy1QrtGF" ,
+    },
+    {
+        id: 2 ,
+        imgUrl: "../assest/services/2.png" ,
+        heading: "Day 2 - Dark Mode" ,
+        desc: "Dark Mode Using Html , Css , Jquery" ,
+        iframe: "https://www.youtube.com/embed/NbRvjh9uHNQ?si=az_IJqLaqFnb6SPa" ,
+    },
+    {
+        id: 3 ,
+        imgUrl: "../assest/services/3.png" ,
+        heading: "Day 3 - Image Top Down" ,
+        desc: "Drop Image Top To Down To Right" ,
+        iframe: "https://www.youtube.com/embed/n34SrTNzc3k?si=d4PpIcJMoDnRcCSO" ,
+    },
+    {
+        id: 4 ,
+        imgUrl: "../assest/services/4.png" ,
+        heading: "Day 4 - Magnet Effect" ,
+        desc: "Hover Magnet Effect" ,
+        iframe: "https://www.youtube.com/embed/j0aVoPUvVBo?si=NQq7AptNr9cwdfip" ,
+    },
+    {
+        id: 5 ,
+        imgUrl: "../assest/services/5.png" ,
+        heading: "Day 5 - Happy Christmas" ,
+        desc: "Happy Christmas - Snow Man" ,
+        iframe: "https://www.youtube.com/embed/BxdH4216OW0?si=VUhr0d9sJ9P2CePW" ,
+    },
+    {
+        id: 6 ,
+        imgUrl: "../assest/services/6.png" ,
+        heading: "Day 6 - Animated Bg" ,
+        desc: "Animated Random Background" ,
+        iframe: "https://www.youtube.com/embed/0N0JbuWaPO8?si=3-S2yZ5oxYWYxG3d" ,
+    },
+    {
+        id: 7 ,
+        imgUrl: "../assest/services/7.png" ,
+        heading: "Day 7 - Form Valadtion" ,
+        desc: "Using Html , Css , Js" ,
+        iframe: "https://www.youtube.com/embed/32zRwdg2u6A?si=qN38-MHLkoL95WVU" ,
+    },
+    {
+        id: 8 ,
+        imgUrl: "../assest/services/8.png" ,
+        heading: "Day 8 - Toast Succsed" ,
+        desc: "Toast Succsed , Invailed , Error" ,
+        iframe: "https://www.youtube.com/embed/9c9k88nSfwU?si=hIGvJ2E5a6gYCLic" ,
+    },
+    {
+        id: 9 ,
+        imgUrl: "../assest/services/9.png" ,
+        heading: "Day 9 - Welcome 2024" ,
+        desc: "Using Html , Css , Js" ,
+        iframe: "https://www.youtube.com/embed/Y2CGh71ttDs?si=reFslIwng01JDEeF" ,
+    },
+    {
+        id: 10 ,
+        imgUrl: "../assest/services/10.png" ,
+        heading: "Day 10 - Live Code" ,
+        desc: "Using Html , Css , Js" ,
+        iframe: "https://www.youtube.com/embed/HcGky6kFGXI?si=0a9I6A7EFoLbFCDd" ,
+    },
+    {
+        id: 11 ,
+        imgUrl: "../assest/services/11.png" ,
+        heading: "Day 11 - To Do List" ,
+        desc: "With Local Storage" ,
+        iframe: "https://www.youtube.com/embed/RAo4I6rQxuk?si=w9bY8reBPS2xTjDh" ,
+    },
+    {
+        id: 12 ,
+        imgUrl: "../assest/services/12.jpg" ,
+        heading: "Day 12 - Random Quotes" ,
+        desc: "Random Quotes , Copy Button" ,
+        iframe: "https://www.youtube.com/embed/CTkBB-qzE6M?si=ylDwN6sSEr8-j6Ij" ,
+    },
+    {
+        id: 13 ,
+        imgUrl: "../assest/services/13.png" ,
+        heading: "Day 13 - Check User Online , No" ,
+        desc: "Check The User Online Or Offline" ,
+        iframe: "https://www.youtube.com/embed/q5xH7Ot0Bro?si=ig4ROMfZhy5koqNX" ,
+    },
+    {
+        id: 14 ,
+        imgUrl: "../assest/services/14.png" ,
+        heading: "Day 14 - Circle Progress" ,
+        desc: "Beautiful And Responsive Desgin" ,
+        iframe: "https://www.youtube.com/embed/pqjiZXal9TQ?si=Yo4g2cTb579hCIss" ,
+    },
+    {
+        id: 15 ,
+        imgUrl: "../assest/services/15.png" ,
+        heading: "Day 15 - Clock" ,
+        desc: "Using Js And Responsive Desgin" ,
+        iframe: "https://www.youtube.com/embed/Hs9m6LFiXR4?si=1jaRaPr3N9o9ghKp" ,
+    },
+    {
+        id: 16 ,
+        imgUrl: "../assest/services/16.png" ,
+        heading: "Day 16 - 3D Images Gallery" ,
+        desc: "Using Html , Css , Js" ,
+        iframe: "https://www.youtube.com/embed/rdXmFNYHdrc?si=4CvbL88myy0VW5v3" ,
+    },
+    {
+        id: 17 ,
+        imgUrl: "../assest/services/17.png" ,
+        heading: "Day 17 - Multi-Steps Form" ,
+        desc: "Using Html , Css , Js" ,
+        iframe: "https://www.youtube.com/embed/7xp8hJM6ABs?si=ER40qGEcnTSEW61O" ,
+    },
+    {
+        id: 18 ,
+        imgUrl: "../assest/services/18.png" ,
+        heading: "Day 18 - Thanks For 500 Sub" ,
+        desc: "500 Subscribers , Using Html , Css , Js" ,
+        iframe: "https://www.youtube.com/embed/pVPivL_7OXI?si=jcjactJ9eFW93EfF" ,
+    },
+    {
+        id: 19 ,
+        imgUrl: "../assest/services/19.png" ,
+        heading: "Day 19 - How To Send Html Form" ,
+        desc: "To Google Sheets, Using Html , Css , Js" ,
+        iframe: "https://www.youtube.com/embed/TeuavdUGfDs?si=i3o99MeTJcw4jVGv" ,
+        new: "New",
+    },
+];
+
+
+    window.addEventListener("DOMContentLoaded" , function() {    
+        localStorage.setItem("allProdcut" , JSON.stringify(AllDays2));
+    })
+
+    var InputValueUn = document.querySelector(".unDBtn");
+    var sendID = document.querySelector(".unDUrlBtnn");
+
+    sendID.addEventListener('click' , function() {
+        if (InputValueUn.value >= 1 && InputValueUn.value <= 19 && InputValueUn.value.length !== 0) {
+            localStorage.setItem("productId" , InputValueUn.value );
+            window.location = "infoProduct.html" ;
+        } else {
+            alert("Please Enter a valid Id between 1 and 19");
+        }
+    });
+    </script>
+</body>
+</html>

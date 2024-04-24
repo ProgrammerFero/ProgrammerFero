@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Goals Of The Year" />
+    <meta name="description" content="A Lot Of FrontEnd Projects "/>
+    <meta name="keywords" content="FrontEnd , #Programmer_Fero"/>
+    <!-- Title -->
+    <title>Goals Of The Year</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../assest/mylogo.png" type="image/x-icon">
+    <!-- FontAsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- BoxICon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Css File -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body onclick="sound()" style="background-color: #222;">
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-icons">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div> <!-- ./menu-icons -->
+
+                <a href="../index.html" class="logo">Programmer Fero</a>
+
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#">
+                                Courses
+                                <i class="fas fa-caret-down"></i>
+                                <ul class="sub-menu">
+                                  <li><a href="courses.html" onclick="saveid()" class="a1">Edit Apps</a></li>
+                                  <li><a href="courses.html" onclick="saveid()" class="a2">SketchWare</a></li>
+                                  <li><a href="courses.html" onclick="saveid()" class="a3">Fix Problems</a></li>
+                                
+                                  <li>
+                                    <a href="#">
+                                        Last Content
+                                        <i class="fas fa-caret-down"></i>
+                                        <ul class="sub-menu">
+                                            <li><a href="courses.html" onclick="saveid()" class="a4">Github</a></li>
+                                            <li><a href="courses.html" onclick="saveid()" class="a5">Hosting Web</a></li>
+                                            <li><a href="courses.html" onclick="saveid()" class="a6">VsCode</a></li>
+                                            <li><a href="courses.html" onclick="saveid()" class="a7">WhatsApp</a></li>
+                                            <li><a href="courses.html" onclick="saveid()" class="a8 new-link">Languages</a></li>
+                                        </ul>
+                                    </a>
+                                </li>
+
+                                </ul>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="prodcutivity.html">Productivity</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Goals Of The Year</a>
+                        </li>
+    
+                        <li>
+                          <a href="100days.html">100 Day With Projects</a>
+                        </li>
+                        
+                        <li class="move-right btn">
+                            <a href="quotes.html">Quotes</a>
+                        </li>
+
+                        <li id="fulll">
+                            <i id="fullscreenButton" class='bx bx-fullscreen animate__animated animate__fadeInDownBig'></i>
+                        </li>
+    
+                    </ul>
+                    
+                </nav>
+            </div>
+    </header> <!-- ./Header -->
+    
+    <!-- New Message -->
+    <div class="newMessage"></div>
+    
+    <!-- New Message -->
+    <div class="subscribeMessage"></div>
+
+    <!-- yourOpinionMSG -->
+    <div class="opionMsg"></div>
+
+    <!-- Visit Thank -->
+    <div class="VisitThank2"></div>
+    
+    <!-- <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i> -->
+    <!-- Services -->
+    <section class="sec-progresses" id="sec-progresses">
+        <div class="parent-progress block">
+            <h2 style="text-align: center;">Goals Of The Years</h2>
+            <hr>
+            <h3 style="text-align: center;">2024 Goals</h3>
+            <h4 >Total Progress for 2024: <b><span id="2024-progress-total">0%</span></b></h4>
+            <div class="progress_bar">
+            <div class="progress_bar_item grid-x">
+                <div class="item_value cell shrink">0%</div>
+                <div class="item_bar cell">
+                    <div class="progress pro2" data-progress="83" style="background-color: red;"></div>
+                </div>
+            </div>
+            </div>
+            <hr>
+            <div class="progress_bar">
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Buy Book Named <b>"Atomic Habits"</b> In English <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="100"></div>
+                    </div>
+                </div>
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Read <b>"Atomic Haibts"</b> Book <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="100"></div>
+                    </div>
+                </div>
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Buy 3 Books <b>"Rich Dad"</b>  , <b>"So Good They Can't Ignore You"</b> , <b>"The 4-Hour Work Week"</b> <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="100"></div>
+                    </div>
+                </div>
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Buy 2 Books <b>"Deep Work"</b> , <b>"The Almanack Of Naval Revikent"</b> <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="100"></div>
+                    </div>
+                </div>
+
+                <!-- <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Buy 2 Books <b>"Eat That Frog"</b> , <b>"Men Are from Mars, Women Are from Venus"</b>  </div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="16"></div>
+                    </div>
+                </div> -->
+
+                <!-- 
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Buy <b>"Steal Like An Artist"</b> </div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="0"></div>
+                    </div>
+                </div>
+                 -->
+
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Read <b>"The 4-Hour Work Week"</b> Book <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="100"></div>
+                    </div>
+                </div>
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Read <b>"Deep Work"</b> Book <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="100"></div>
+                    </div>
+                </div>
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Read <b>"The Almanack Of Naval Revikent"</b> Book <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="100"></div>
+                    </div>
+                </div>
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Read <b>"So Good They Can't Ignore You"</b> Book <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="100"></div>
+                    </div>
+                </div>
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Read <b>"Rich Dad And Poor Dad"</b> Book </div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="26"></div>
+                    </div>
+                </div>
+
+                <!-- <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Read <b>"Eat That Frog"</b> Book </div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="0"></div>
+                    </div>
+                </div> -->
+<!-- 
+
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Read <b>"Men Are from Mars, Women Are from Venus"</b> Book </div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="0"></div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Read <b>"Steal Like An Artist"</b> Book </div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="0"></div>
+                    </div>
+                </div> -->
+
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">1000 Subscribers</div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="81"></div>
+                    </div>
+                </div>
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Finish <b>JS</b></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="39"></div>
+                    </div>
+                </div>
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Learn <b>BackEnd</b></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="0"></div>
+                    </div>
+                </div>
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Learn <b>English</b> Like A Naitve Speaker</div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="79"></div>
+                    </div>
+                </div>
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Learn <b>Chinese</b> Language <b>A1</b></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="81"></div>
+                    </div>
+                </div>
+
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Learn <b>Chinese</b> Language <b>A2</b></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="0"></div>
+                    </div>
+                </div>
+
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Make <b>A Personal Web</b> <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="100"></div>
+                    </div>
+                </div>
+
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Make <b>A Web For Best Book To Read It</b> <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="100"></div>
+                    </div>
+                </div>
+
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Make A Web For <b>Summrize Books And Quote From Books</b> And The Best Rules Or Things From The Book </div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="1"></div>
+                    </div>
+                </div>
+
+                <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Learn <b>Typing On Keyboard Fast</b> <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="100"></div>
+                    </div>
+                </div>
+                <!-- <div class="progress_bar_item grid-x">
+                    <div class="item_label cell auto">Replace My <b>Old Laptop</b> With <b>A New One</b>  </div>
+                    <div class="item_value cell shrink">0%</div>
+                    <div class="item_bar cell">
+                        <div class="progress" data-progress="7"></div>
+                    </div>
+                </div> -->
+
+                <hr>
+
+                <h3 style="text-align: center;">2023 Goals</h3>
+                <hr>
+                <div class="progress_bar">
+                    <div class="progress_bar_item grid-x">
+                        <div class="item_label cell auto">Buy 3 Books <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                        <div class="item_value cell shrink">0%</div>
+                        <div class="item_bar cell">
+                            <div class="progress" data-progress="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress_bar_item grid-x">
+                        <div class="item_label cell auto">Reads 4 Books <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                        <div class="item_value cell shrink">0%</div>
+                        <div class="item_bar cell">
+                            <div class="progress" data-progress="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress_bar_item grid-x">
+                        <div class="item_label cell auto">400 Subscribers <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                        <div class="item_value cell shrink">0%</div>
+                        <div class="item_bar cell">
+                            <div class="progress" data-progress="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress_bar_item grid-x">
+                        <div class="item_label cell auto">Learn FrontEnd <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                        <div class="item_value cell shrink">0%</div>
+                        <div class="item_bar cell">
+                            <div class="progress" data-progress="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress_bar_item grid-x">
+                        <div class="item_label cell auto">Learn English <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                        <div class="item_value cell shrink">0%</div>
+                        <div class="item_bar cell">
+                            <div class="progress" data-progress="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress_bar_item grid-x">
+                        <div class="item_label cell auto">Make A FrontEnd Projects <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                        <div class="item_value cell shrink">0%</div>
+                        <div class="item_bar cell">
+                            <div class="progress" data-progress="100"></div>
+                        </div>
+                    </div>
+    
+                    <hr>
+                    <h3 style="text-align: center;">2022 Goals</h3>
+                    <hr>
+                    <div class="progress_bar">
+                        <div class="progress_bar_item grid-x">
+                            <div class="item_label cell auto">Read 5 Books <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                            <div class="item_value cell shrink">0%</div>
+                            <div class="item_bar cell">
+                                <div class="progress" data-progress="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress_bar_item grid-x">
+                            <div class="item_label cell auto">Start A Youtube Channel After Removed 5 Times <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                            <div class="item_value cell shrink">0%</div>
+                            <div class="item_bar cell">
+                                <div class="progress" data-progress="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress_bar_item grid-x">
+                            <div class="item_label cell auto">Learn FrontEnd <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                            <div class="item_value cell shrink">0%</div>
+                            <div class="item_bar cell">
+                                <div class="progress" data-progress="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress_bar_item grid-x">
+                            <div class="item_label cell auto">Make A FrontEnd Projects <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                            <div class="item_value cell shrink">0%</div>
+                            <div class="item_bar cell">
+                                <div class="progress" data-progress="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress_bar_item grid-x">
+                            <div class="item_label cell auto">Learn Basics Of Python <i class='bx bxs-check-circle' style='color:#2aff00; font-size: 30px;'></i></div>
+                            <div class="item_value cell shrink">0%</div>
+                            <div class="item_bar cell">
+                                <div class="progress" data-progress="100"></div>
+                            </div>
+                        </div>
+        
+            </div>
+        </div>
+    </section>
+
+    <section class="foot sec-foot" id="foot">
+        <footer>
+
+            <div class="flex-foot">
+                <h3>Courses</h3>
+                <ul>
+                    <li><a onclick="sound()" href="../html/courses.html" onclick="saveid()" class="f1">Edit Apps</a></li>
+                    <li><a onclick="sound()" href="../html/courses.html" onclick="saveid()" class="f2">SketchWare</a></li>
+                    <li><a onclick="sound()" href="../html/100days.html">Frontend Projects</a></li>
+                    <li><a onclick="sound()" href="../html/courses.html" onclick="saveid()" class="f3" >Fix Problems</a></li>  
+                </ul>
+            </div>
+
+            <div class="flex-foot social-footer">
+                <h3>Social</h3>
+                <ul>
+                    <li><a onclick="sound()" href="https://www.facebook.com/felobater.fam1?mibextid=ZbWKwL"><i class='bx bxl-facebook' ></i> FaceBook</a></li>
+                    <li><a onclick="sound()" href="https://youtube.com/@programmerfero"><i class='bx bxl-youtube' ></i> Youtube</a></li>
+                    <li><a onclick="sound()" href="https://instagram.com/programmer_fero?igshid=YmMyMTA2M2Y="><i class='bx bxl-instagram-alt' ></i> Instgram</a></li>
+                    <li><a onclick="sound()" href="https://wa.link/vmle86"><i class='bx bxl-whatsapp' ></i> WhatsApp</a></li>  
+                </ul>
+            </div>
+
+            <div class="flex-foot">
+                <h3>Projects</h3>
+                <ul>
+                    <p>
+                        © Created By Programmer Fero In 1/12/2024
+                    </p>
+                    <p>
+                        Last Update In 
+                        25/1/2024
+                    </p>
+                    <p>
+                        The number of updates is 10
+                    </p>
+                </ul>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Load library from the CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="../js/newGoals.js"></script>
+</body>
+</html>
